@@ -3,9 +3,9 @@ package Principal;
 import org.neodatis.odb.ODB;
 import org.neodatis.odb.ODBFactory;
 
-import Dao.AsignaturaDao;
-import Dao.CentroDao;
-import Dao.ProfesorDao;
+import DAO.AsignaturaDao;
+import DAO.CentroDao;
+import DAO.ProfesorDao;
 import utilidades.Leer;
 
 public class App {
@@ -23,7 +23,7 @@ public class App {
 		int opcion = 0;
 		do {
 			// IMPRIMIMOS MENU
-			System.out.println("1.- Crear datos para la BBOO");
+			System.out.println("1.- Poblar la BBOO");
 			System.out.println("2.- Listar todos los centros");
 			System.out.println("3.- Listar todos los profesores");
 			System.out.println("4.- Listar todos los profesores de un centro");
