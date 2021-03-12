@@ -12,6 +12,10 @@ public class Profesor {
 	private String sexo;
 	private String fechaNacimiento;
 
+	public Profesor() {
+
+	}
+
 	public Profesor(int codigo, String nombre, String apellidos, String sexo, String fechaNacimiento) {
 		this.codigo = codigo;
 		this.nombre = nombre;

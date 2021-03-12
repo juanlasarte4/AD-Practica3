@@ -11,6 +11,10 @@ public class Asignatura {
 	private int codigo;
 	private String nombre;
 	private List<Profesor> profesoresQueLaImparten;
+	
+	public Asignatura() {
+
+	}
 
 	public Asignatura(int codigo, String nombre, List<Profesor> profesoresQueLaImparten) {
 		this.codigo = codigo;
