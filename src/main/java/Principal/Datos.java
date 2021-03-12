@@ -9,17 +9,17 @@ import Modelos.Profesor;
 
 public class Datos {
 
-	public static Profesor profesorItaca1 = new Profesor(0, "Profesor", "Gorallez", "M", "19-3-2993");
-	public static Profesor profesorItaca2 = new Profesor(1, "Marianosa", "Capote", "F", "38-7-1990");
-	public static Profesor profesorItaca3 = new Profesor(2, "Achoroque", "Gonzalsio", "M", "5-21-1746");
-	public static Profesor profesorCefor1 = new Profesor(3, "Elni", "Casio", "M", "22-5-1998");
-	public static Profesor profesorCefor2 = new Profesor(4, "Rolevilla", "Hinasia", "F", "4-12-3821");
-	public static Profesor profesorCefor3 = new Profesor(5, "Higuchumbu", "Zoforeos", "?", "38-4-1997");
-	public static Profesor directorItaca = new Profesor(6, "José Antonio", "Guallar", "M", "348-231");
-	public static Profesor directorCefor = new Profesor(7, "Pepe", "Notas", "M", "9-23-1234");
+	public static Profesor profesorItaca1 = new Profesor(0, "Profesor", "1", "M", "19-3-1965");
+	public static Profesor profesorItaca2 = new Profesor(1, "Profesor", "2", "F", "12-7-1995");
+	public static Profesor profesorItaca3 = new Profesor(2, "Profesor", "3", "M", "4-2-1976");
+	public static Profesor profesorCefor1 = new Profesor(3, "Profesor", "4", "M", "2-5-1998");
+	public static Profesor profesorCefor2 = new Profesor(4, "Profesor", "5", "F", "24-12-1987");
+	public static Profesor profesorCefor3 = new Profesor(5, "Profesor", "6", "F", "8-4-1965");
+	public static Profesor directorItaca = new Profesor(6, "Profesor", "7", "M", "3-1978");
+	public static Profesor directorCefor = new Profesor(7, "Profesor", "8", "M", "29-10-1994");
 	
-	public static Centro iesItaca = new Centro(1, "IES Itaca", directorItaca, "Avda Estudiantes 1", "Zaragoza","Zaragoza");
-	public static Centro ceforIzquierdo = new Centro(2, "Cefor Izquierdo", directorCefor, "Avda Tenor Fleta 17", "Zaragoza", "Zaragoza");
+	public static Centro iesItaca = new Centro(0, "IES Itaca", directorItaca, "Avda Estudiantes 1", "Zaragoza","Zaragoza", Arrays.asList(profesorItaca1, profesorItaca2, profesorItaca3));
+	public static Centro ceforIzquierdo = new Centro(1, "Cefor Izquierdo", directorCefor, "Avda Tenor Fleta 17", "Zaragoza", "Zaragoza", Arrays.asList(profesorCefor1, profesorCefor2, profesorCefor3));
 	
 	public static Asignatura pm = new Asignatura(0, "Programación Multimedia",Arrays.asList(profesorItaca1, profesorCefor1));
 	public static Asignatura di = new Asignatura(1, "Desarrollo de Interfaces",Arrays.asList(profesorItaca2, profesorCefor2));

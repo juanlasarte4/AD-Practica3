@@ -10,7 +10,7 @@ public class App {
 	public static void main(String[] args) {
 
 		// INICIAMOS LA CONEXION A LA BBDD
-		ODB odb = ODBFactory.open("neodatis");
+		ODB odb = ODBFactory.open("src/main/resources/database.txt");
 
 		// VARIABLE QUE UTILIZAREMOS PARA ELEGIR LA FUNCION DEL MENU
 		int opcion = 0;
@@ -20,10 +20,8 @@ public class App {
 			System.out.println("2.- Listar todos los centros");
 			System.out.println("3.- Listar todos los profesores");
 			System.out.println("4.- Listar todos los profesores de un centro");
-			System.out.println(
-					"5.- Listar todos los profesores de un centro cuya fecha de nacimiento sea anterior a 1993");
-			System.out.println(
-					"6.- Listar los profesores con sexo masculino que impartan la asignatura de 'Acceso a datos'.");
+			System.out.println("5.- Listar todos los profesores de un centro cuya fecha de nacimiento sea anterior a 1993");
+			System.out.println("6.- Listar los profesores con sexo masculino que impartan la asignatura de 'Acceso a datos'.");
 			System.out.println("7.- Comprobar que un profesor ya existe");
 			System.out.println("0.- Salir del programa");
 
