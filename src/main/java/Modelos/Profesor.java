@@ -59,4 +59,11 @@ public class Profesor {
 	public void setFechaNacimientoProfesor(String fechaNacimientoProfesor) {
 		this.fechaNacimientoProfesor = fechaNacimientoProfesor;
 	}
+
+	@Override
+	public String toString() {
+		return "Profesor [codigoProfesor=" + codigoProfesor + ", nombreProfesor=" + nombreProfesor
+				+ ", apellidosProfesor=" + apellidosProfesor + ", sexoProfesor=" + sexoProfesor
+				+ ", fechaNacimientoProfesor=" + fechaNacimientoProfesor + "]";
+	}
 }

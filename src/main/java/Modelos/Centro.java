@@ -81,4 +81,11 @@ public class Centro {
 	public void setLosProfesores(List<Profesor> losProfesores) {
 		this.losProfesores = losProfesores;
 	}
+
+	@Override
+	public String toString() {
+		return "Centro [codigoCentro=" + codigoCentro + ", nombreCentro=" + nombreCentro + ", directorCentro="
+				+ directorCentro + ", direccionCentro=" + direccionCentro + ", localidadCentro=" + localidadCentro
+				+ ", provinciaCentro=" + provinciaCentro + ", losProfesores=" + losProfesores + "]";
+	}
 }

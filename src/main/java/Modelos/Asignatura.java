@@ -40,4 +40,10 @@ public class Asignatura {
 	public void setProfesoresQueLaImparten(List<Profesor> profesoresQueLaImparten) {
 		this.profesoresQueLaImparten = profesoresQueLaImparten;
 	}
+
+	@Override
+	public String toString() {
+		return "Asignatura [codigoAsignatura=" + codigoAsignatura + ", nombreAsignatura=" + nombreAsignatura
+				+ ", profesoresQueLaImparten=" + profesoresQueLaImparten + "]";
+	}
 }
